@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'django.contrib.sites',
+    'django.contrib.sites',
     'django.contrib.flatpages',
 
     'oscar',
@@ -89,7 +89,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-	'oscar.apps.basket.middleware.BasketMiddleware',
+    'oscar.apps.basket.middleware.BasketMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
@@ -106,10 +106,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-				'oscar.apps.search.context_processors.search_form',
-				'oscar.apps.checkout.context_processors.checkout',
-				'oscar.apps.customer.notifications.context_processors.notifications',
-				'oscar.core.context_processors.metadata',
+                'oscar.apps.search.context_processors.search_form',
+                'oscar.apps.checkout.context_processors.checkout',
+                'oscar.apps.customer.notifications.context_processors.notifications',
+                'oscar.core.context_processors.metadata',
             ],
         },
     },
@@ -125,7 +125,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		'USER': '',
+        'USER': '',
         'PASSWORD': '',
         'HOST': '',
         'PORT': '',
